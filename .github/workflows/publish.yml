@@ -1,0 +1,22 @@
+# 金丝雀：走一遍真实发布链路，但 dry-run 不落 registry。
+name: smoke
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  npm:
+    name: dry-run publish
+    uses: cordis-tavern/ci-workflows/.github/workflows/publish-npm.yml@main
+    permissions:
+      contents: read
+      id-token: write
+    with:
+      install-command: ''
+      build-command: ''
+      dry-run: true
