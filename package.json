@@ -1,6 +1,6 @@
 {
   "name": "ci-workflows-smoke",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "ci-workflows 金丝雀：验证 npm 发布链路（dry-run，不真发）",
   "type": "module",
@@ -8,5 +8,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cordis-tavern/ci-workflows-smoke.git"
-  }
+  },
+  "packageManager": "pnpm@12.4.1"
 }

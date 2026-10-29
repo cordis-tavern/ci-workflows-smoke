@@ -17,6 +17,6 @@ jobs:
       contents: read
       id-token: write
     with:
-      install-command: ''
-      build-command: ''
+      install-command: pnpm install --frozen-lockfile
+      build-command: node -e "console.log(2 + 2)"
       dry-run: true
