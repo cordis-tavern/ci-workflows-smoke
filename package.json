@@ -4,7 +4,7 @@
   "private": false,
   "description": "ci-workflows 金丝雀：验证 npm 发布链路（dry-run，不真发）",
   "type": "module",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cordis-tavern/ci-workflows-smoke.git"
